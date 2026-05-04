@@ -1,7 +1,54 @@
-body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
-nav a { margin-right: 20px; text-decoration: none; color: #004c99; font-weight: bold; }
+b/* 1. Global Reset & Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-.portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.project-card img { width: 100%; border-radius: 4px; }
-.btn { background: #004c99; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+/* 2. Modern Navigation */
+nav {
+    background: #2c3e50;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: #3498db; }
+
+/* 3. Hero Section (The "About Me" area) */
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+}
+
+.about h1 { font-size: 3rem; margin-bottom: 10px; }
+
+/* 4. Professional Button */
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
