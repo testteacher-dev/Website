@@ -105,3 +105,48 @@ body {
     border-radius: 8px;
     margin-top: 15px;
 }
+/* ================================
+   PROJECT GRID AND CARD STYLING
+   ================================ */
+
+/* 1. The container (the grid itself) */
+.project-grid {
+    display: grid;
+    /* Responsive layout: cards resize and stack automatically */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Space between cards */
+    padding: 0 20px 60px 20px;
+}
+
+/* 2. Style the individual cards (The Links) */
+.project-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none; /* Removes link underline */
+    color: #333; /* Standard text color */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3. The Hover State: Makes the card lift up */
+.project-card:hover {
+    transform: translateY(-10px); /* Lifts the card */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); /* Stronger shadow */
+    border: 1px solid #ddd;
+}
+
+/* Styling the headers inside the cards */
+.project-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #2c3e50; /* Deep blue from hero */
+}
+
+/* Styling the description text inside the cards */
+.project-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #7f8c8d; /* Subtle grey */
+    line-height: 1.6;
+}
