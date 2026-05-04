@@ -1,4 +1,5 @@
 /* --- Global Styles --- */
+/*body: Sets the global font, a light grey background, and removes default browser margins to ensure the site fills the screen edge-to-edge.*/
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     background: #f4f4f4; 
@@ -6,7 +7,7 @@ body {
     color: #333; 
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section: This is the top banner of your site. It uses a sage green background (#8eaca8), centers the text, and provides ample padding for a bold introduction. */
 .hero {
     background: #8eaca8;
     color: white;
@@ -14,14 +15,14 @@ body {
     padding: 60px 20px 100px 20px;
 }
 
-/* --- Layout Container --- */
+/* --- Layout Containerhis acts as a wrapper that constrains the width of your main content to 900px, centering it on the screen. The negative margin (margin: -50px auto 50px auto) creates a "lifted" effect, making the white content cards overlap the hero section slightly for a modern look. */
 .container {
     max-width: 900px;
     margin: -50px auto 50px auto;
     padding: 0 20px;
 }
 
-/* --- Card Base Styles --- */
+/* --- Card Base Styles: .card: Defines the white "boxes" you see on your site. It uses border-radius for rounded corners and box-shadow to give them depth, making them look like floating elements. */
 .card {
     background: white;
     padding: 30px;
@@ -30,7 +31,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* --- Project Grid (The Gallery) --- */
+/* --- Project Grid (The Gallery): This is the most important part of your site layout. It uses display: grid and repeat(auto-fit, minmax(280px, 1fr)) . This tells the browser: "Put as many cards as can fit on a row, as long as they are at least 280px wide." This is why your projects automatically switch from a single column on a phone to multiple columns on a desktop. */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -38,7 +39,7 @@ body {
     padding-bottom: 60px;
 }
 
-/* --- Clickable Project Card --- */
+/* --- Clickable Project Card: .project-card:hover: This adds a "lift" effect. By using transform: translateY(-10px), the card physically moves up when the mouse passes over it. The transition property makes this movement smooth rather than jumpy. */
 .project-card {
     display: block;
     text-decoration: none;
@@ -52,7 +53,7 @@ body {
     cursor: pointer;
 }
 
-/* --- Image Styling --- */
+/* --- Image Styling: .project-img: Uses object-fit: cover. This ensures that even if you upload images of different sizes, they are cropped and resized to perfectly fill the 180px height without looking stretched or distorted. */
 .project-img {
     width: 100%;
     height: 180px;
