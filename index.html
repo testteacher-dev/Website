@@ -10,7 +10,7 @@
 
     <section class="hero">
         <h1>Python Foundations</h1>
-        <p>Professional Coding Journal & Instructional Portfolio | 2026</p>
+        <p>Professional Coding Journal | 2026</p>
         <a href="https://github.com/your-username" target="_blank" class="btn">View Repository</a>
     </section>
 
@@ -18,8 +18,13 @@
         
         <section class="card">
             <h2>About the Developer</h2>
-            <p>I am a student developer passionate about Python and IT. This portfolio showcases the projects I built during my 2026 coding program.</p>
+            <p>I am a student developer passionate about Python and IT. This portfolio showcases the projects I built during my 2026 coding club.</p>
         </section>
+
+        <section class="card" id="readme-container">
+    <h2>Project Documentation</h2>
+    <div id="readme-content">Loading project details...</div>
+</section>
 
         <h2>Instructional Modules & Projects</h2>
         <div class="project-grid">
@@ -43,6 +48,16 @@
             
         </div>
     </main>
-
+<script>
+    // Replace 'sheenaz-dev' and 'Python-Foundations' with your actual username/repo
+    fetch('https://raw.githubusercontent.com/sheenaz-dev/Python-Foundations/main/README.md')
+        .then(response => response.text())
+        .then(text => {
+            // This is a simple display; for full Markdown formatting, 
+            // consider using a library like 'marked.js'
+            document.getElementById('readme-content').innerText = text;
+        })
+        .catch(err => console.error('Failed to load README:', err));
+</script>
 </body>
 </html>
