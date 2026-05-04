@@ -100,3 +100,12 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
 }
+/* Special styling for the Final Project card */
+.final-project {
+    border: 2px solid #8eaca8; /* Adds a colored border */
+    background: #fdfdfd;      /* Slightly different background */
+}
+
+.final-project h3 {
+    color: #8eaca8; /* Matches your header color */
+}
