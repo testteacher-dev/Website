@@ -23,7 +23,13 @@
 
         <section class="card" id="readme-container">
     <h2>Project Documentation</h2>
-    <div id="readme-content">Loading project details...</div>
+    <section class="container">
+    <a href="https://github.com/sheenaz-dev/Python-Foundations/blob/main/README.md" target="_blank" class="card documentation-card">
+        <h3>View Full Project Documentation</h3>
+        <p>Read my professional coding journal, lesson notes, and project logs on GitHub.</p>
+        <span class="btn-small">Go to GitHub README</span>
+    </a>
+</section>
 </section>
 
         <h2>Instructional Modules & Projects</h2>
@@ -48,16 +54,6 @@
             
         </div>
     </main>
-<script>
-    // Replace 'sheenaz-dev' and 'Python-Foundations' with your actual username/repo
-    fetch('https://raw.githubusercontent.com/sheenaz-dev/Python-Foundations/main/README.md')
-        .then(response => response.text())
-        .then(text => {
-            // This is a simple display; for full Markdown formatting, 
-            // consider using a library like 'marked.js'
-            document.getElementById('readme-content').innerText = text;
-        })
-        .catch(err => console.error('Failed to load README:', err));
-</script>
+
 </body>
 </html>
