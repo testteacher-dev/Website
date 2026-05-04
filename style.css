@@ -1,6 +1,7 @@
-body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
+/* Global Reset */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f4; margin: 0; color: #333; }
 
-/* The Sage Green Header */
+/* Hero Section */
 .hero {
     background: #8eaca8;
     color: white;
@@ -8,7 +9,7 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
     padding: 60px 20px 100px 20px;
 }
 
-/* The Main Container (Boxed Look) */
+/* Boxed Container */
 .container {
     max-width: 900px;
     margin: -50px auto 50px auto;
@@ -22,13 +23,7 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-bottom: 20px;
-    text-decoration: none;
-    color: #333;
-    display: block;
-    transition: transform 0.2s;
 }
-
-.card:hover { transform: translateY(-5px); }
 
 /* Project Grid */
 .project-grid {
@@ -37,7 +32,16 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
     gap: 20px;
 }
 
-/* Button */
+/* Image Styling */
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
     background: #fff;
@@ -47,4 +51,15 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
     text-decoration: none;
     font-weight: bold;
     margin-top: 15px;
+}
+
+.btn-small {
+    display: block;
+    background: #8eaca8;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
