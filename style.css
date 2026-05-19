@@ -5,7 +5,7 @@ body {
     font-family: "Lucida Console", "Courier New", "monospace";
     background : #ecdafa; 
     margin:0; 
-    color: rgb(252,38,245); 
+    color: #2d3748; 
 }
 
 /* --- Hero Section: This is the top banner of your site. It uses a sage green background (#8eaca8), centers the text, and provides ample padding for a bold introduction. */
@@ -111,4 +111,7 @@ body {
 
 .final-project h3 {
     color: #cae2f8; /* Matches your header color */
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #1a202c; /* <--- Force all headers to be a strong, dark charcoal */
 }
