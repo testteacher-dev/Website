@@ -113,5 +113,5 @@ body {
     color: #cae2f8; /* Matches your header color */
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #1a202c; /* <--- Force all headers to be a strong, dark charcoal */
+    color: #e90909; /* <--- Force all headers to be a strong, dark charcoal */
 }
